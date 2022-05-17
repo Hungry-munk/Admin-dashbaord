@@ -14,6 +14,8 @@ h2,
 h3,
 h4,
 div,
+ul,
+li,
 p {
     margin: 0;
     padding: 0;
@@ -40,7 +42,6 @@ body{
 
 header {
     grid-area: header;
-    background: orange;
     padding:var(--body-padding);
 }
 
@@ -80,18 +81,16 @@ header>div#top-header>div {
 }
 
 
-
+/* start - left sidebar css */
 .left-sidebar {
     grid-area: dashboard;
-    background: var(--blue-colour);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 3rem;
+    padding: calc(var(--body-padding) * 1.5);
 }
 
-.left-sidebar>div {
-    padding: var(--body-padding);
-    padding-right: calc(var(--body-padding) * 2);
+.left-sidebar>div:not(:first-child, :last-child) {
     display: flex;
     flex-direction: column;
     gap: 5rem;
@@ -100,15 +99,24 @@ header>div#top-header>div {
 ul {
     list-style: none;
     display: grid;
-    /* justify-content: center; */
-    ;
     gap: 0.5rem;
-
 }
+
 ul>li {
     display: flex;
     align-items: center;
 }
+
+.dashboard-header,
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* end - left sidebar css */
+
+
 main#projects-board {
     grid-area: main;
     padding: calc(var(--body-padding) * 2);
@@ -118,6 +126,7 @@ main>div.projects-container {
     grid-template-columns: repeat(auto-fit , minmax(16rem, 1fr)) ;
     gap: 1.5rem 2rem;
 }
+
 
 #right-sidebar {
     grid-area: right-sidebar;
