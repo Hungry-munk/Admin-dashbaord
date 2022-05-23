@@ -1,3 +1,6 @@
 # Admin-dashbaord
 
-A project assigned by The Odin Project after learning more HTML and CSS, the pupose of the porject is make better page layouts and use cooler features with grid and flex box to make overall great and awsome looking websites, that are also easier to make reponsive.
+This branch of the admin dash is my attempt to add a dark mode button,
+The button functionality is quite simple and some things couldnt be changed (like the side bar icons) because I hadnt made the website originally with the idea to this functinalaty but its stil kinda cool.
+
+their isnt many changes overall, but some minor changes to the css and some javascript addition
